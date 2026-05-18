@@ -1,11 +1,10 @@
 Date Submitted: 2026-04-06
-
 Version 1.6.1
 Author:         OldNGrey (BMH)
 
-"SecurePay XML API" Installation Guide for Zen Cart 1.5.8 to 2.2.2
+"SecurePay XML API" Installation Guide for Zen Cart 1.5.8a to 2.2.2
 ===========================================================
-This plugin enables support for credit-card transactions via the SecurePay (AU) (now owned by FatZebra) payment gateway.
+This plugin enables support for credit-card transactions via the SecurePay (AU)(now owned by FatZebra) payment gateway.
 
 BMH  changes
 ============
@@ -76,18 +75,11 @@ These instructions assume that you already have Zen Cart installed, configured a
 6. The SecurePay XML API payment module is now installed. Set it to "Live" when your account is activated, and you are ready to receive payments through SecurePay.
 
 Test Gateway Operation
-======================
-In test mode, your transactions will be sent to the the SecurePay Test Gateway. 
-**The Merchant ID and Password for the test gateway are NOT the same as the Merchant ID and Password for your live Merchant Account. 
-Please contact your SecurePay Payment Gateway Reseller or SecurePay Support if you need a test Merchant ID and Transaction password.
-
-You can test with the following settings:
------------------------------------------
-Merchant ID = ABC0001
-Merchant Password = abc123
-Test Mode = Yes
-
-See \docs\Secure_XML_API_Integration_Guide_1.12.pdf page 6 for test examples.
+---------------------------------------------------------------------------------------------------
+In test mode, your transactions will be sent to the the SecurePay Test Gateway. The Merchant ID and
+Password for the test gateway are NOT the same as the Merchant ID and Password for your live 
+Merchant Account. Please contact your SecurePay Payment Gateway Reseller or SecurePay Support if 
+you need a test Merchant ID and Transaction password.
 
 When processing transactions, if the transaction is would otherwise give a 000 "Approved" response
 code, the Test gateway will return the cents portion of the transaction amount as the response code

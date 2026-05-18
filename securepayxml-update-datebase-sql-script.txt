@@ -1,0 +1,3 @@
+Copy the following code and paste it into the Admin > Tools > Install SQl Patches screen then click SEND.
+
+ALTER TABLE `securepayxml` CHANGE `banktxnid` `banktxnid` VARCHAR(16) DEFAULT NULL;
